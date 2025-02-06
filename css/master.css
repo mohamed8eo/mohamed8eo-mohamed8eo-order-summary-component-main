@@ -1,0 +1,138 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Bright2-blue: hsl(245 100% 70.91%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Red Hat Display", serif;
+    background-color: var(--Pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.card .card-container .content{
+    text-align: center;
+    border-radius: 1.5rem ;
+    max-width: 450px;
+    background-color: white;
+}
+.card .card-container .content img{
+    max-width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.card .card-container .content h2{
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.card .card-container .content p{
+    font-size: 16px;
+    margin: 0 55px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+}
+.card .card-container  .plan{
+    background: var(--very-pale-blue);
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius:5px;
+}
+.card .card-container .plan .music{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+.card .card-container .plan  img{
+    margin: 0 15px 0 25px;
+    height: 40px;
+}
+.card .card-container .plan .time{
+    display: flex;
+    flex-direction: column;
+}
+.card .card-container .plan .time span:first-child{
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--Dark-blue);
+}
+.card .card-container .plan .time span:last-child{
+    font-size: 15px;
+    color: var(--Desaturated-blue);
+}
+.card .card-container .plan  a{
+    margin-right: 25px;
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 13px;
+}
+.card .card-container .plan  a:hover{
+    color: var(--Bright2-blue);
+    text-decoration: none;
+}
+.card .card-container .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .card-container .button .button-1{
+    border: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    width: 75%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    box-shadow: 0px 8px 30px -3px var(--Desaturated-blue);
+}
+.card .card-container .button .button-2{
+    border: none;
+    margin-bottom: 35px;
+    background: none;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+.card .card-container .button .button-1:hover{
+    background-color: var(--Bright2-blue);
+}
+.card .card-container .button .button-2:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
